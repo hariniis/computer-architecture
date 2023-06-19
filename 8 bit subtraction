@@ -1,0 +1,14 @@
+    LXI H,2500H
+    MOV A,M
+    INX H
+    MOV B,M
+    SUB B
+    JNC 200BH
+    CMA 
+    INR A
+    INR D
+:  INX H
+    MOV M,A
+    INX H
+    MOV M,D
+    HLT

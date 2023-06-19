@@ -1,0 +1,14 @@
+LXI  H,1100
+MOV B, M 
+MVI C, 00
+INX H
+MOV A,M
+LOOP: CMP B
+JC skip
+SUB B
+INR C
+JMP LOOP 
+skip: STA 1102
+MOV A, C 
+STA 1103 
+Hlt

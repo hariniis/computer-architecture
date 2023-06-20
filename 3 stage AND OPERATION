@@ -1,0 +1,25 @@
+
+
+counter=1
+
+a=int(input("ENTER NUMBER-1-"))
+
+counter=counter+1
+
+b=int(input("ENTER NUMBER-2-"))
+
+counter=counter+1
+
+res= a and b
+
+counter=counter+1
+
+print(res)
+
+counter=counter+2
+
+INS=int(input("enter no. of instructions:"))
+
+performance_measure=INS/counter
+
+print("performance measure:",performance_measure)
